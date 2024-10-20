@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Typescript #2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container-fluid bg-info d-flex align-items-center">
+        <img src="./imagenes/tvseries.jpg" alt="TV Icon" style="width: 50px; height: 50px; margin-right: 15px;">
+        <h1>TV Series</h1>
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-8">
+                <table id="series-table" class="table table-hover table-bordered">
+                    <thead class="bg-dark text-white">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series-tbody"></tbody>
+                </table>
+                <p id="season-average"></p>
+            </div>
+            <div class="col-4">
+                <div id="series-details" class="card" style="display: none;">
+                    <img id="series-img" class="card-img-top" alt="Series image">
+                    <div class="card-body">
+                        <h5 id="series-title" class="card-title"></h5>
+                        <p id="series-desc" class="card-text"></p>
+                        <a id="series-link" href="#" class="btn btn-primary" target="_blank">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>
